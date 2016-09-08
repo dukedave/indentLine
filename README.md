@@ -58,6 +58,14 @@ See the [VIM Reference Manual](http://vimdoc.sourceforge.net/htmldoc/version7.ht
 let g:indentLine_enabled = 0
 ```
 
+**Only enable for specific file types**
+
+e.g. for only [Haml](http://haml.info/) files, put this `.vimrc`:
+```
+let g:indentLine_enabled = 0
+autocmd FileType haml IndentLinesToggle
+```
+
 ### Commands
 `:IndentLinesToggle` toggles lines on and off.
 
